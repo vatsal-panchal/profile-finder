@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Live Profile Finder</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>GitHub Profile Finder</h1>
+    <div class="search-box">
+        <input type="text" id="usernameInput" placeholder="Type GitHub username...">
+        <button id="searchBtn"><i class="ri-search-line"></i> Search</button>
+    </div>
+
+    <div id="profile" class="profile hidden">
+        <div class="profile-card">
+            <img id="avatar" src="" alt="Profile Picture">
+            <div class="profile-details">
+                <h2 id="name"></h2>
+                <p id="bio"></p>
+                <div class="profile-stats">
+                    <div><strong>Followers:</strong> <span id="followers"></span></div>
+                    <div><strong>Following:</strong> <span id="following"></span></div>
+                    <div><strong>Repos:</strong> <span id="repos"></span></div>
+                </div>
+                <div class="repo-list" id="repoList"></div>
+            </div>
+        </div>
+        <button id="followBtn" class="follow-btn">Follow</button>
+    </div>
+
+    <p id="error" class="error hidden">User not found!</p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
